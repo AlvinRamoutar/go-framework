@@ -1,0 +1,13 @@
+config:
+  language: EN
+  logging:
+    loglevel: 1
+    consoleloggingenabled: true
+    encodelogsasjson: true
+    fileloggingenabled: false
+    fileloggingdirectory: "./"
+    fileloggingfilename: "log"
+    fileloggingmaxsize: 10
+    fileloggingmaxbackups: 99999999
+    fileloggingmaxage: 99999999
+  

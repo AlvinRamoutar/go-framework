@@ -1,0 +1,38 @@
+{"level":"info","module":"log","code":"LIBCOMM010","time":"2023-03-19T16:37:42-04:00","message":"Module started successfully"}
+{"level":"info","module":"conf","code":"LIBCOMM010","time":"2023-03-19T16:37:42-04:00","message":"Module started successfully"}
+{"level":"info","module":"log","code":"LIBCOMM012","time":"2023-03-19T17:15:25-04:00","message":"Reloading module with live config"}
+{"level":"info","module":"what?","code":"LIBCOMM010","time":"2023-03-19T17:15:32-04:00","message":"Module started successfully"}
+{"level":"info","module":"log","code":"LIBCOMM012","time":"2023-04-30T00:37:13-04:00","message":"Reloading module with live config"}
+{"level":"info","module":"log","code":"LIBCOMM012","time":"2023-04-30T00:38:56-04:00","message":"Reloading module with live config"}
+{"level":"info","module":"log","code":"LIBCOMM012","time":"2023-04-30T00:53:25-04:00","message":"Reloading module with live config"}
+{"level":"info","module":"log","code":"LIBCOMM012","time":"2023-04-30T12:51:25-04:00","message":"Reloading module with live config"}
+{"level":"info","module":"log","code":"LIBCOMM012","time":"2023-05-25T13:47:26-04:00","message":"Reloading module with live config"}
+{"level":"info","module":"log","code":"LIBCOMM012","time":"2023-05-25T13:50:09-04:00","message":"Reloading module with live config"}
+{"level":"info","module":"log","code":"LIBCOMM012","time":"2023-05-25T13:50:14-04:00","message":"Reloading module with live config"}
+{"level":"info","module":"log","code":"LIBCOMM012","time":"2023-05-25T13:51:45-04:00","message":"Reloading module with live config"}
+{"level":"info","module":"log","code":"LIBCOMM012","time":"2023-05-25T13:51:58-04:00","message":"Reloading module with live config"}
+{"level":"info","module":"log","code":"LIBCOMM012","time":"2023-05-25T13:52:10-04:00","message":"Reloading module with live config"}
+{"level":"info","module":"log","code":"LIBCOMM012","time":"2023-05-25T13:53:15-04:00","message":"Reloading module with live config"}
+{"level":"info","module":"log","code":"LIBCOMM012","time":"2023-05-25T14:00:36-04:00","message":"Reloading module with live config"}
+{"level":"info","module":"log","code":"LIBCOMM012","time":"2023-05-25T14:17:08-04:00","message":"Reloading module with live config"}
+{"level":"info","module":"log","code":"LIBCOMM012","time":"2023-05-25T15:23:47-04:00","message":"Reloading module with live config"}
+{"level":"fatal","module":"http","code":"ENLIBHTTP009","time":"2023-05-25T15:23:47-04:00","message":"Internal routine failure serving HTTP"}
+{"level":"info","module":"log","code":"LIBCOMM012","time":"2023-05-25T15:24:57-04:00","message":"Reloading module with live config"}
+{"level":"info","module":"log","code":"LIBCOMM012","time":"2023-05-25T23:23:38-04:00","message":"Reloading module with live config"}
+{"level":"info","module":"log","code":"LIBCOMM012","time":"2023-05-25T23:26:31-04:00","message":"Reloading module with live config"}
+{"level":"info","module":"http","code":"executed","time":"2023-05-25T23:27:12-04:00"}
+{"level":"info","module":"http","code":"executed","time":"2023-05-25T23:27:31-04:00"}
+{"level":"info","module":"http","code":"executed","time":"2023-05-25T23:27:33-04:00"}
+{"level":"info","module":"http","code":"executed","time":"2023-05-25T23:27:34-04:00"}
+{"level":"info","module":"http","code":"executed","time":"2023-05-25T23:27:34-04:00"}
+{"level":"info","module":"http","code":"executed","time":"2023-05-25T23:27:35-04:00"}
+{"level":"info","module":"http","code":"executed","time":"2023-05-25T23:27:35-04:00"}
+{"level":"info","module":"http","code":"executed","time":"2023-05-25T23:27:36-04:00"}
+{"level":"info","module":"http","code":"executed","time":"2023-05-25T23:27:36-04:00"}
+{"level":"info","module":"log","code":"LIBCOMM012","time":"2023-05-25T23:29:39-04:00","message":"Reloading module with live config"}
+{"level":"info","module":"http","code":"executed","time":"2023-05-25T23:30:42-04:00"}
+{"level":"info","module":"log","code":"LIBCOMM012","time":"2023-05-25T23:31:45-04:00","message":"Reloading module with live config"}
+{"level":"info","module":"http","code":"GET localhost:8080/helloworld?asd","time":"2023-05-25T23:31:50-04:00"}
+{"level":"info","module":"log","code":"LIBCOMM012","time":"2023-05-25T23:35:40-04:00","message":"Reloading module with live config"}
+{"level":"info","module":"http","code":"ENLIBHTTP050","time":"2023-05-25T23:35:42-04:00","message":"GET localhost:8080/helloworld?asd"}
+{"level":"info","module":"log","code":"LIBCOMM012","time":"2023-05-26T00:27:58-04:00","message":"Reloading module with live config"}
