@@ -4,10 +4,10 @@ import (
 	nhttp "net/http"
 	"sync"
 
-	"alvinr.ca/go-framework/base"
-	"alvinr.ca/go-framework/http"
-	"alvinr.ca/go-framework/lang"
-	"alvinr.ca/go-framework/log"
+	"github.com/AlvinRamoutar/go-framework/base"
+	"github.com/AlvinRamoutar/go-framework/http"
+	"github.com/AlvinRamoutar/go-framework/lang"
+	"github.com/AlvinRamoutar/go-framework/log"
 )
 
 var APP_NAME string = "core"

@@ -1,3 +1,3 @@
-module alvinr.ca/go-framework/http
+module github.com/AlvinRamoutar/go-framework/http
 
 go 1.19

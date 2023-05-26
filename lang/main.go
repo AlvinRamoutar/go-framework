@@ -5,7 +5,7 @@ import (
 	"errors"
 	"strconv"
 
-	"alvinr.ca/go-framework/lang/data"
+	"github.com/AlvinRamoutar/go-framework/lang/data"
 )
 
 var VERSION string = "0.0.1"

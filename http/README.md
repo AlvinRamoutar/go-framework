@@ -1,3 +1,3 @@
-# alvinr.ca/go-framework/http
+# github.com/AlvinRamoutar/go-framework/http
 
 HTTP server module for HTTP APIs

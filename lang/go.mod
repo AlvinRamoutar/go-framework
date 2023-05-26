@@ -1,3 +1,3 @@
-module alvinr.ca/go-framework/lang
+module github.com/AlvinRamoutar/go-framework/lang
 
 go 1.19

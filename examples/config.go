@@ -4,8 +4,8 @@ import (
 	"errors"
 	"os"
 
-	"alvinr.ca/go-framework/http"
-	"alvinr.ca/go-framework/log"
+	"github.com/AlvinRamoutar/go-framework/http"
+	"github.com/AlvinRamoutar/go-framework/log"
 	"github.com/kelseyhightower/envconfig"
 	"gopkg.in/yaml.v2"
 )

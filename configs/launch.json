@@ -10,7 +10,7 @@
             "request": "launch",
             "mode": "auto",
             "program": "core/.",
-            "args": ["C:/Users/Alvin/source/repos/go-framework/alvinr.ca/go-framework/.vscode/config.yml"],
+            "args": ["C:/Users/Alvin/source/repos/go-framework/github.com/AlvinRamoutar/go-framework/.vscode/config.yml"],
             "env": {
                 "CORE_LOGGING_FILELOGGINGENABLED": "true",
             }

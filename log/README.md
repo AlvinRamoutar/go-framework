@@ -1,3 +1,3 @@
-# alvinr.ca/go-framework/log
+# github.com/AlvinRamoutar/go-framework/log
 
 Configurable logging module

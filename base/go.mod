@@ -1,3 +1,3 @@
-module alvinr.ca/go-framework/base
+module github.com/AlvinRamoutar/go-framework/base
 
 go 1.19

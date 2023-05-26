@@ -1,4 +1,4 @@
-module alvinr.ca/go-framework/log
+module github.com/AlvinRamoutar/go-framework/log
 
 go 1.19
 
