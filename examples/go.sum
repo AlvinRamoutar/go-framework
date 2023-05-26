@@ -1,3 +1,11 @@
+github.com/AlvinRamoutar/go-framework/base v0.0.1 h1:imxTOimBCa0G+POOFWrN7lUqFAoZrpTMhyNkwW9zB30=
+github.com/AlvinRamoutar/go-framework/base v0.0.1/go.mod h1:ngXq5ZwNuVyAeH3NDk4XMs6yUVGqXhKg3MlghJaWcPY=
+github.com/AlvinRamoutar/go-framework/http v0.0.1 h1:N59SgicN6guOsTsE6UFkRrfo80hKEFWs9xVG5z+zb14=
+github.com/AlvinRamoutar/go-framework/http v0.0.1/go.mod h1:uRprB+pWCh19S4bcChsQddZwnbMJiabdi7CfhaV94S8=
+github.com/AlvinRamoutar/go-framework/lang v0.0.1 h1:GNAz1hMjtoPQ+4ywbKUdrE7UtunNA2E/iE9hM3cWyNU=
+github.com/AlvinRamoutar/go-framework/lang v0.0.1/go.mod h1:aX1L9ekM4Xu/CC14hnXNeMUaI4MNPWnFqiLr0ycSLMk=
+github.com/AlvinRamoutar/go-framework/log v0.0.1 h1:6KyAATq1d5QntWissqfS8TuhXTnd1jIVadn/2t80GOQ=
+github.com/AlvinRamoutar/go-framework/log v0.0.1/go.mod h1:5mVWvNU77EpjIr2Lg6zVYTHWDINIvi/r0owBKI1/isw=
 github.com/coreos/go-systemd/v22 v22.3.3-0.20220203105225-a9a7ef127534/go.mod h1:Y58oyj3AT4RCenI/lSvhwexgC+NSVTIJ3seZv2GcEnc=
 github.com/godbus/dbus/v5 v5.0.4/go.mod h1:xhWf0FNVPg57R7Z0UbKHbJfkEywrmjJnf7w5xrFpKfA=
 github.com/kelseyhightower/envconfig v1.4.0 h1:Im6hONhd3pLkfDFsbRgu68RDNkGF1r3dvMUtDTo2cv8=

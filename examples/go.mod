@@ -1,10 +1,10 @@
 module github.com/AlvinRamoutar/go-framework/examples
 
 require (
-	github.com/AlvinRamoutar/go-framework/base v0.0.0
-	github.com/AlvinRamoutar/go-framework/http v0.0.0
-	github.com/AlvinRamoutar/go-framework/lang v0.0.0
-	github.com/AlvinRamoutar/go-framework/log v0.0.0
+	github.com/AlvinRamoutar/go-framework/base v0.0.1
+	github.com/AlvinRamoutar/go-framework/http v0.0.1
+	github.com/AlvinRamoutar/go-framework/lang v0.0.1
+	github.com/AlvinRamoutar/go-framework/log v0.0.1
 	github.com/kelseyhightower/envconfig v1.4.0
 	gopkg.in/yaml.v2 v2.4.0
 )
