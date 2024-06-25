@@ -2,6 +2,8 @@ package http
 
 import (
 	"path"
+	"regexp"
+	"strconv"
 	"strings"
 )
 
@@ -88,4 +90,21 @@ func (e *HttpError) Error() string {
 type ResponseResult struct {
 	ResponseCode int
 	Error        error
+}
+
+func IsValidFQDN(fqdn string) bool {
+	fqdnRegex, _ := regexp.Compile("^([a-zA-Z0-9._-])+$")
+	return fqdnRegex.MatchString(fqdn)
+}
+
+func IsValidPortNumber(port int) bool {
+	return (port >= 0 && port <= 65535)
+}
+
+func IsValidPortString(port string) bool {
+	portNumber, err := strconv.Atoi(port)
+    if err == nil {
+        return false
+    }
+	return IsValidPortNumber(portNumber)
 }

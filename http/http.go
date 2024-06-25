@@ -1,6 +1,7 @@
 package http
 
 import (
+	"fmt"
 	"io"
 	"net/http"
 	"regexp"
@@ -23,7 +24,7 @@ func (h *HttpConfig) New() *HttpConfig {
 }
 
 type Http struct {
-	Config             HttpConfig
+	Config             *HttpConfig
 	Routes             []Route
 	DefaultRoutes      []Route
 	Closer             io.Closer
@@ -119,7 +120,7 @@ func (h *Http) indexOfRoute(name string) int {
 }
 
 func (h *Http) listenAndServe() error {
-	srv := &http.Server{Addr: ":8080", Handler: h}
+	srv := &http.Server{Addr: fmt.Sprintf("%s:%d", h.Config.Host, h.Config.Port), Handler: h}
 	return srv.ListenAndServe()
 }
 

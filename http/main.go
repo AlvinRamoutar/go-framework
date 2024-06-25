@@ -10,8 +10,17 @@ import (
 var VERSION string = "0.0.1"
 
 func (h *Http) Init(config *HttpConfig) error {
-	h.Config = *config
+	h.Config = config
 	h.DefaultRouteRegexp, _ = regexp.Compile("^[1-9][0-9]{2}$")
+
+	// config validation
+	if !IsValidFQDN(h.Config.Host) {
+		return errors.New("ENLIBHTTP007")
+	}
+	if !IsValidPortNumber(h.Config.Port) {
+		return errors.New("ENLIBHTTP008")
+	}
+
 	return nil
 }
 

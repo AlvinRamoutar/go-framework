@@ -12,11 +12,15 @@ var EN_DATA = map[string]string{
 	"ENLIBCOMM012": "Reloading module with live config",
 	"ENLIBCONF010": "Failed to load config file from given path",
 	"ENLIBCONF011": "Failed to unmarshal config file from given path; it was found, but the format was not as expected",
+	"ENLIBHTTP007": "Invalid host FQDN specified in config for HTTP server",
+	"ENLIBHTTP008": "Invalid port specified in config for HTTP server",
 	"ENLIBHTTP009": "Internal routine failure serving HTTP",
 	"ENLIBHTTP010": "Could not add this route as one with the given name already exists",
 	"ENLIBHTTP011": "Could not add this route as its of path type regex, and the provided regex is invalid",
 	"ENLIBHTTP015": "Could not delete this route as one with the given name doesn't exist",
 	"ENLIBHTTP050": "HTTP request inbound",
+	"ENLIBSCHD011": "Failed to start scheduler, config was invalid",
+	"ENLIBSCHD021": "Failed to add scheduler task, time type or value is invalid",
 }
 
 func (pack ENPack) New() map[string]string {
