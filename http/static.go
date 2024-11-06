@@ -87,8 +87,10 @@ func (e *HttpError) Error() string {
 	return e.code
 }
 
-type ResponseResult struct {
+type ResponseBody struct {
 	ResponseCode int
+	Headers      map[string]string
+	Data         string
 	Error        error
 }
 
@@ -103,8 +105,8 @@ func IsValidPortNumber(port int) bool {
 
 func IsValidPortString(port string) bool {
 	portNumber, err := strconv.Atoi(port)
-    if err == nil {
-        return false
-    }
+	if err == nil {
+		return false
+	}
 	return IsValidPortNumber(portNumber)
 }

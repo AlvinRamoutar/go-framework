@@ -19,11 +19,13 @@ var Log *log.Log = &log.Log{}
 var Conf *Config = &Config{}
 var Http *http.Http = &http.Http{}
 
-func Act(res nhttp.ResponseWriter, req *nhttp.Request) http.ResponseResult {
-	LogInfoWithMessage("http", "ENLIBHTTP050", req.Method + " " + req.Host + req.RequestURI)
-	return http.ResponseResult{
-		ResponseCode: 200,
-		Error: nil,
+func Act(res nhttp.ResponseWriter, req *nhttp.Request) http.ResponseBody {
+	LogInfoWithMessage("http", "ENLIBHTTP050", req.Method+" "+req.Host+req.RequestURI)
+	return http.ResponseBody{
+		ResponseCode: 202,
+		Headers:      map[string]string{"Content-Type": "application/json"},
+		Data:         "hi",
+		Error:        nil,
 	}
 }
 
@@ -40,15 +42,15 @@ func main() {
 
 	Http.Init(Conf.Config.Http)
 
-    newRoute := http.Route{
-		Name: "helloworld",
-		Method: http.GET,
-		Path: "helloworld",
+	newRoute := http.Route{
+		Name:     "helloworld",
+		Method:   http.GET,
+		Path:     "helloworld",
 		PathType: http.EXACT,
-	    Action: Act,
+		Action:   Act,
 	}
 	Http.AddRoute(newRoute)
-	
+
 	// Starting modules
 	Libs = map[string]base.Library{
 		"lang": Lang,

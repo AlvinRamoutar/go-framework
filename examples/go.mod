@@ -1,10 +1,10 @@
 module github.com/AlvinRamoutar/go-framework/examples
 
 require (
-	github.com/AlvinRamoutar/go-framework/base v0.0.1
-	github.com/AlvinRamoutar/go-framework/http v0.0.1
-	github.com/AlvinRamoutar/go-framework/lang v0.0.1
-	github.com/AlvinRamoutar/go-framework/log v0.0.1
+	github.com/AlvinRamoutar/go-framework/base v0.0.2
+	github.com/AlvinRamoutar/go-framework/http v0.0.2
+	github.com/AlvinRamoutar/go-framework/lang v0.0.2
+	github.com/AlvinRamoutar/go-framework/log v0.0.2
 	github.com/kelseyhightower/envconfig v1.4.0
 	gopkg.in/yaml.v2 v2.4.0
 )
@@ -17,12 +17,12 @@ require (
 	gopkg.in/natefinch/lumberjack.v2 v2.2.1 // indirect
 )
 
-// replace github.com/AlvinRamoutar/go-framework/base v0.0.0 => ../base
+replace github.com/AlvinRamoutar/go-framework/base v0.0.2 => ../base
 
-// replace github.com/AlvinRamoutar/go-framework/lang v0.0.0 => ../lang
+replace github.com/AlvinRamoutar/go-framework/lang v0.0.2 => ../lang
 
-// replace github.com/AlvinRamoutar/go-framework/log v0.0.0 => ../log
+replace github.com/AlvinRamoutar/go-framework/log v0.0.2 => ../log
 
-// replace github.com/AlvinRamoutar/go-framework/http v0.0.0 => ../http
+replace github.com/AlvinRamoutar/go-framework/http v0.0.2 => ../http
 
 go 1.19

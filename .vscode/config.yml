@@ -1,0 +1,15 @@
+config:
+    language: EN
+    logging:
+        loglevel: 1
+        consoleloggingenabled: true
+        encodelogasjson: true
+        fileloggingenabled: false
+        fileloggingdirectory: "../.temp/"
+        fileloggingfilename: "log"
+        fileloggingmaxsize: 10
+        fileloggingmaxbackups: 99
+        fileloggingmaxage: 99
+    http:
+        host: "127.0.0.1"
+        port: 8023

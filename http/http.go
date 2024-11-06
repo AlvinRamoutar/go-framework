@@ -40,29 +40,29 @@ type Route struct {
 	Action       actionDef
 }
 
-type actionDef func(res http.ResponseWriter, req *http.Request) ResponseResult
+type actionDef func(res http.ResponseWriter, req *http.Request) ResponseBody
 
 func (h *Http) ServeHTTP(res http.ResponseWriter, req *http.Request) {
 	if req.URL.Path != "/" {
 		head, _ := ShiftPath(req.URL.Path)
 
-		var rr ResponseResult
+		var rb ResponseBody
 		for _, route := range h.Routes {
 			if route.PathType == REGEX {
 				if route.CompiledPath.MatchString(head) {
-					rr = route.Action(res, req)
+					h.Respond(res, route.Action(res, req))
 				}
 			} else if route.PathType == EXACT {
 				if route.Path == head {
-					rr = route.Action(res, req)
+					h.Respond(res, route.Action(res, req))
 				}
 			}
 		}
 
 		// process response
 		for _, route := range h.DefaultRoutes {
-			if strconv.Itoa(rr.ResponseCode) == route.Path {
-				route.Action(res, req)
+			if strconv.Itoa(rb.ResponseCode) == route.Path {
+				h.Respond(res, route.Action(res, req))
 			}
 		}
 	}
@@ -90,6 +90,15 @@ func (h *Http) AddRoutes(routes []Route) error {
 			return err
 		}
 	}
+	return err
+}
+
+func (h *Http) Respond(res http.ResponseWriter, rb ResponseBody) error {
+	res.WriteHeader(rb.ResponseCode)
+	for k, v := range rb.Headers {
+		res.Header().Add(k, v)
+	}
+	_, err := res.Write([]byte(rb.Data))
 	return err
 }
 
@@ -127,12 +136,12 @@ func (h *Http) listenAndServe() error {
 func (h *Http) Serve() error {
 	wg := new(sync.WaitGroup)
 	wg.Add(1)
-	
+
 	go func() {
 		h.listenAndServe()
 		wg.Done()
 	}()
-	
+
 	wg.Wait()
 	return nil
 }
